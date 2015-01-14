@@ -79,7 +79,36 @@ return x*x;
  * @param {number} y
  * @return {number} the result
  */
+function calculate(operation,x,y){
+var number;
+  switch(operation){
 
+    case "add":
+      number = x + y;
+      op = "+";
+    break;
+    
+    case "subtract":
+      number = x - y;
+      op = "-";
+    break;
+
+    case "multiply":
+      number = x*y;
+      op="*";
+    break;
+
+    case "divide":
+      number=x/y;
+      op="/";
+    break;
+
+
+  }
+
+   console.log( x + " " + op + " "+ y + " = " + number);
+ return number;
+}
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
