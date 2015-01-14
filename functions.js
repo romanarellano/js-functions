@@ -214,7 +214,16 @@ function letterGrade(score,total){
  * set itsreviews` field to 1.
  * @param {object} restaurant represents a restaurant
  */
+function incrementReviews(restaurant){
 
+   if(restaurant.hasOwnProperty("reviews")){
+ restaurant.reviews+=1;
+  
+  }
+   else restaurant.reviews=1;
+return restaurant;
+
+}
 /**
  * Joins two strings with a space.
  * @param {string} word1
