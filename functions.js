@@ -21,7 +21,9 @@ return n.toString();
  * @param {number} n
  * @return {number}
  */
-
+function decrease(n){
+  return n-=1;
+}
 /**
  * Adds two numbers.
  * @param {number} x
