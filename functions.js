@@ -172,13 +172,19 @@ function maximum(x,y){
  * @param {number} n
  * @return {boolean} the number is even
  */
-
+function isEven(n){
+   if(n%2===0)return true;
+   else return false;
+}
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function isOdd(n){
+ if(n%2!==0)return true;
+ else return false;
+}
 /**
  * Returns a letter grade.
  * "A": 90-100%
@@ -190,6 +196,17 @@ function maximum(x,y){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+function letterGrade(score,total){
+
+   var result = score/total *100;
+  
+  if (result>=90 && result <=100)return "A";
+  else if(result>=80 && result<90)return "B";
+  else if(result>=70 && result<80)return "C";
+  else if(result>=60 && result<70)return "D";
+  else return "F";
+}
+
 
 /**
  * Checks if a `restaurant` object has are `views` field.
